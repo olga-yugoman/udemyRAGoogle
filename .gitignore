@@ -19,4 +19,4 @@ out/
 target/
 
 #private
-.properties
+*.properties
