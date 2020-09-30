@@ -1,5 +1,7 @@
 package constants;
 
+import api.utils.UtilsMethod;
+
 public class Constants {
 
     //domain name
@@ -16,4 +18,6 @@ public class Constants {
     public static class Endpoint {
         public static String GOOGLE_PLACE_ENDPOINT_SEARCH = "findplacefromtext/json";
     }
+
+    public static final String API_KEY = UtilsMethod.getValue("API_KEY");
 }

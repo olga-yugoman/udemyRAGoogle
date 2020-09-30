@@ -21,7 +21,10 @@ public class NetworkCore {
                 .when()
                 .request(method);
 
-        response.then().assertThat().statusCode(code);
+        response.then()
+                .log().body()
+                .assertThat().statusCode(code);
+
         try {
             responseBody = new JSONObject(response.getBody().asString());
         } catch (Exception e) {
